@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.controls, .pen-controls, .download-controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.controls button, .pen-controls button, .download-controls button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover, .pen-controls button:hover, .download-controls button:hover {
+    background-color: #0056b3;
+}
+
+#box-container {
+    border: 2px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-box {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
